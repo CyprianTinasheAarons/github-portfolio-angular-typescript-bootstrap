@@ -15,7 +15,7 @@ import { RepositoriesComponent } from './repositories/repositories.component';
     RepositoriesComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule
   ],
   providers: [],
